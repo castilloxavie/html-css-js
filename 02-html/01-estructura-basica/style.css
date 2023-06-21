@@ -1,0 +1,103 @@
+/* Estilos generales */
+html {
+    background: linear-gradient(to right, hsl(0, 12%, 58%), #f0d1d1);
+}
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #131111;
+    background: linear-gradient(to right, hsl(0, 12%, 58%), #f0d1d1);
+
+      
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  /* Estilos de la barra de navegación */
+  nav {
+    background: linear-gradient(to right, #e4c9c9, #f1f1f1);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #0f0d0d;
+  }
+  
+  /* Estilos de las secciones */
+  section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  section h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  section p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
