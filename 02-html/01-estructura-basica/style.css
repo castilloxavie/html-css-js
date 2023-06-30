@@ -1,18 +1,18 @@
 /* Estilos generales */
 html {
-    background: linear-gradient(to right, hsl(0, 12%, 58%), #f0d1d1);
+  background: linear-gradient(to right, hsl(0, 12%, 58%), #f0d1d1);
 }
   
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #131111;
-    background: linear-gradient(to right, hsl(0, 12%, 58%), #f0d1d1);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #131111;
+  background: linear-gradient(to right, hsl(0, 12%, 58%), #f0d1d1);
 
-      
-  }
+    
+}
   
   .container {
     max-width: 960px;
@@ -61,7 +61,7 @@ body {
   
   /* Estilos de las secciones */
   section {
-    background-color: #fff;
+    background: linear-gradient(to right, hsl(134, 12%, 58%), #ccaeae);
     padding: 20px;
     margin-bottom: 20px;
   }
@@ -82,9 +82,11 @@ body {
   }
   
   section img {
+    align-content: center;
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    border-radius: 600px;
   }
   
   /* Estilos del pie de página */
@@ -100,4 +102,37 @@ body {
     text-decoration: none;
   }
   
+
+/* Media queries para estilos responsivos */
+
+/* Estilos para dispositivos com largura igual ou inferior a 768 pixels */
+
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
   
+    .container {
+      padding: 10px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 0;
+    }
+  }
+  
+  /* Estilos para dispositivos com largura igual ou inferior a 480 pixels */
+  @media (max-width: 480px) {
+    header {
+      padding: 10px;
+    }
+  
+    section {
+      padding: 10px;
+    }
+  
+    section h3 {
+      font-size: 16px;
+    }
+  }

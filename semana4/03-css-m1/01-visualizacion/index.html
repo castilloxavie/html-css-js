@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualización de los Elementos</title>
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .tarjetas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .tarjeta {
+      padding: 40px 30px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00000023;
+    }
+
+    .tarjeta h2,
+    .tarjeta p {
+      margin: 0;
+    }
+
+    .tarjeta h2 {
+      color: #ea4959;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Visualización de los Elementos</h1>
+  </header>
+
+  <main>
+    <div class="tarjetas">
+      <!-- Dsiplay -->
+      <a href="display.html" class="tarjeta">
+        <h2>Display</h2>
+        <p>La propiedad display define el tipo de caja que se va a utilizar para un elemento.</p>
+      </a>
+
+      <!-- Visibility -->
+      <a href="visibility.html" class="tarjeta">
+        <h2>Visibility</h2>
+        <p>La propiedad visibility especifica si un elemento de caja es visible.</p>
+      </a>
+
+      <!-- Diferencia entre display y visibility -->
+      <a href="diferencia.html" class="tarjeta">
+        <h2>Diferencia entre display y visibility</h2>
+        <p>La propiedad display define el tipo de caja que se va a utilizar para un elemento, mientras que la propiedad
+          visibility especifica si un elemento de caja es visible.</p>
+      </a>
+
+      <!-- Opacidad -->
+      <a href="opacity.html" class="tarjeta">
+        <h2>Opacity</h2>
+        <p>La propiedad opacity especifica la opacidad de un elemento.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Academlo &copy; 2023</p>
+  </footer>
+</body>
+
+</html>

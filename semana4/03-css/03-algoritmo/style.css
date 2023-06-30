@@ -1,0 +1,39 @@
+/* Algoritmo de CSS */
+/* 
+ * 1. Cascada
+ * 2. Especificidad
+ * 3. Herencia
+ * 4. !important 
+ */
+
+/* 
+ * 1. Cascada
+ * Las hojas de estilo se leen de arriba hacia abajo, por lo que si hay dos reglas que afectan al mismo elemento, la que esté más abajo será la que se aplique.
+ */
+
+/*
+ * 2. Especificidad
+ * Cada selector tiene una puntuación que determina su especificidad.
+ * La Especificidad se calcula de la siguiente forma:
+ ===================================================
+ * etiquetas y pseudoelementos ---------- 0, 0, 0, 1
+ ===================================================
+ * clases, atributos y pseudoclases ----- 0, 0, 1, 0
+ ===================================================
+ * indetificadores ---------------------- 0, 1, 0, 0
+ ===================================================
+ * estilos en línea --------------------- 1, 0, 0, 0
+ ===================================================
+ */
+
+/*
+ * 3. Herencia
+ * Algunas propiedades se heredan de los elementos padre a los elementos hijos.
+ * Sin embargo, no todos los elementos heredan todas las propiedades.
+ */
+
+/*
+ * 4. !important
+ * Si añadimos !important a una propiedad, esta tendrá prioridad sobre todas las demás, incluso sobre las propiedades en línea.
+ * No es recomendable usarlo, ya que puede causar problemas de mantenimiento.
+ */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diferencia entre display y visibility</title>
+  <link rel="stylesheet" href="base.css">
+  <style>
+    .caja {
+      background-color: #f9df74;
+      border: 4px solid #f39c12;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .error {
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 20px;
+      background-color: #e74c3c;
+      border-radius: 6px;
+    }
+
+    .exito {
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 20px;
+      background-color: #2ecc71;
+      border-radius: 6px;
+    }
+
+    .botones {
+      display: flex;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .boton {
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .boton-errores {
+      background-color: #e74c3c;
+    }
+
+    .boton-exito {
+      background-color: #2ecc71;
+    }
+
+    .oculto {
+      display: none;
+    }
+
+    .invisible {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="./index.html">⬅️</a> Diferencia entre display y visibility</h1>
+  </header>
+
+  <main>
+    <div class="contenedor">
+      <div class="alertas">
+        <p id="mostrarExito" class="exito invisible">¡Todo salió bien!</p>
+        <p id="mostrarError" class="error oculto">Ocurrió un error, por favor intenta más tarde</p>
+      </div>
+      
+      <div class="caja">
+        <h2>Caja</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam ratione id quidem? Unde delectus, dolore pariatur minima voluptas aperiam possimus commodi animi nihil consequuntur. Quos voluptate ipsam corrupti autem?</p>
+      </div>
+
+      <div class="botones">
+        <button id="btnExito" class="boton boton-exito">Mostrar mensaje de éxito</button>
+        <button id="btnError" class="boton boton-errores">Mostrar mensaje de error</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    btnError.onclick = () => {
+      mostrarError.classList.toggle('oculto')
+    }
+
+    btnExito.onclick = () => {
+      mostrarExito.classList.toggle('invisible')
+    }
+  </script>
+
+  <footer>
+    <p>Academlo &copy; 2023</p>
+  </footer>
+</body>
+</html>

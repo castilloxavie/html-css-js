@@ -1,0 +1,120 @@
+/* Selectores CSS */
+
+/*
+ * Selector universal: *
+ */
+
+/*
+ * Selector de tipo o etiqueta: p, div, h1, body, html, etc.
+ */
+ body{
+    background-color: color-mix(in srgb, green 15%, white 50%);
+    color: white;
+ }
+
+ p {
+    color: lightcyan;
+ }
+
+/*
+ * Selector de clase: .clase, .clase1.clase2, .clase1 .clase2
+ */
+
+ .clase{
+    text-decoration: rebeccapurple underline;
+    color: aqua;
+ }
+/*
+ * Selector de id: #id (no se puede repetir en el documento)
+ */
+#tabla {
+   color: black;
+}
+
+#tabla #tituloTabla{
+   font-size: 2em;
+   color: yellow;
+   border: 3px solid black;
+   width: 13.2%;
+   background: rgb(202, 191, 191);
+   border-radius: 30%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#tabla #elemebos_tabla{
+   border: 1px solid red;
+}
+
+#tabla #contenido{
+   background-color: antiquewhite;
+}
+/*
+ * Selector de atributo: [attr="valor"]
+ * [attr^="valor"] -> comienza con
+ * [attr$="valor"] -> termina con
+ * [attr*="valor"] -> contiene valor en cualquier parte
+ * [attr~="valor"] -> contiene lista de valores separadas por espacio
+ */
+
+/* Combinadores */
+
+/*
+ * Selector descendiente: div p
+ */
+
+/*
+ * Selector hijo: div > p
+ */
+
+/*
+ * Selector hermano adyacente: div + p
+ */
+
+/*
+ * Selector hermano general: div ~ p
+ */
+
+/* Pseudo-clases */
+
+/*
+ * :active
+ * :checked
+ * :disabled
+ * :empty
+ * :enabled
+ * :first-child
+ * :first-of-type
+ * :focus
+ * :hover
+ * :in-range
+ * :invalid
+ * :last-child
+ * :last-of-type
+ * :link
+ * :not(selector)
+ * :nth-child(n)
+ * :nth-last-child(n)
+ * :nth-last-of-type(n)
+ * :nth-of-type(n)
+ * :only-of-type
+ * :only-child
+ * :optional
+ * :out-of-range
+ * :read-only
+ * :read-write
+ * :required
+ * :root
+ * :target
+ * :valid
+ * :visited
+ */
+
+/* Pseudo-elementos */
+
+/*
+ * ::after
+ * ::before
+ * ::first-letter
+ * ::first-line
+ * ::selection
+ */
