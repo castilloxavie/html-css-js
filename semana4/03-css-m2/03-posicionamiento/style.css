@@ -142,16 +142,44 @@ footer {
 /* 📌 Posicionamiento */
 /* ✅ static */
 
-/* ✅ Propiedades Offset
+header {
+  position: static;
+
+  /* ✅ relative */
+
+  /* position: relative;
+  top: 20px;
+  right: 100px;
+} *//* ✅ Propiedades Offset
   1. top
   2. right
   3. bottom
   4. left
 */
 
-/* ✅ relative */
-
 /* ✅ absolute */
+position: absolute;
+}
+
+nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav > div {
+  position: relative;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
 
 /* ✅ fixed */
 

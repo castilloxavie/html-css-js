@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    overflow-x:hidden ;
+}
+
+.envoltura {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    color: #fff;
+}
+
+.nabar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.marca {
+    margin-top: -7px;
+}
+
+.marca span{
+    color: #000080;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+    
+}
+
+.menu a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .activa {
+    color: #000080;
+}
+
+.menu a:hover {
+    background-color: #8B0000;
+    color: #000000;
+    transition: ease-in .3s;
+    
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.contenedor-img {
+    width: 350px;
+    height: 350px;
+    border: 5px solid white;
+    border-radius: 10px 30px  60px 100px;
+}
+
+.contenedor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+h1 {
+    font-size: 3em;
+}
+
+span {
+    color: rgb(0, 0, 128);
+}
+
+.descarga-cv {
+    padding: 10px 20px;
+    background-color: #006400;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px --5px rgba(black, white, grey
+    );
+}
+
+.descarga-cv:hover {
+    background-color: #8B0000;
+    box-shadow: none;
+}
+
+.acerca-de {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+
+}
+
+.acerca-de img {
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.informacio-acerca-de {
+  grid-column: 5/10; 
+  padding: 3em; 
+}
+
+.informacio-acerca-de h2 {
+    font-size: 2em;
+    color: #000000;
+}
+
+.dividir {
+    height: 4px;
+    width: 60px;
+    background-color: #006400;
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+
+.acerca-de p {
+    margin-bottom: 1em;
+}

@@ -1,0 +1,142 @@
+/* CSS Document */
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header span {
+  background-color: skyblue;
+  padding: 0 5px;
+  border-radius: 5% 20% 5% 20%;
+}
+
+main {
+  padding: 10px 20px;
+}
+
+footer {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px 0;
+}
+
+/* ✅ Variables */ 
+
+/* ✅ Tipografía */
+main p {
+  /* 📌 font family */
+
+  /* 📌 Fuentes seguras */
+
+  /* 📌 Fuentes de Google Fonts (externas) */
+}
+
+/* ✅ Colores */
+.hero {
+  width: 100%;
+  height: 300px;
+  border-radius: 30px 30px 0 0;
+  /* 📌 Palabras clave */
+  background-color: lightskyblue;
+
+  /* 📌 Hexadecimal */
+
+  /* 📌 RGB + A */
+
+  /* 📌 HSL + A */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.hero img {
+  width: 160px;
+  height: 160px;
+}
+
+/* ✅ Background */
+.bg1 {
+  background-image: url('https://source.unsplash.com/random/1920x1080/?developer');
+}
+
+.bg2 {
+  background-image: url('https://source.unsplash.com/random/1920x1080/?coding');
+}
+
+.parallax {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax span {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* ✅ Etiqueta img */
+.imagenes {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 130px);
+  gap: 1rem;
+}
+
+.contenedor img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor img:nth-child(1) {
+  grid-row: span 2;
+}

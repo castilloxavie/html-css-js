@@ -1,0 +1,229 @@
+/* CSS Document */
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header span {
+  background-color: skyblue;
+  padding: 0 5px;
+  border-radius: 5% 20% 5% 20%;
+}
+
+main {
+  padding: 10px 20px;
+}
+
+footer {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* ✅ Grid */
+.contenedor {
+  display: grid;
+  border: 4px solid lightcoral;
+  padding: 20px;
+  min-height: 200px;
+}
+
+body section + section .contenedor{
+  border-color: lightgreen;
+}
+
+.elemento {
+  padding: 15px;
+  border: 4px solid lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-50 {
+  font-size: 50px;
+}
+
+/* 🔥 Propiedades para el contenedor */
+/* 📌 Filas y columnas */
+.caja1 {
+  /* ✅ grid-template-[rows|columns] */
+
+  /* ✅ grid */
+
+  /* ✅ grid-auto-flow */
+  
+  /* ✅ grid-auto-[rows|columns] */
+
+  /* ✅ [row|column]-gap */
+
+  /* ✅ gap */
+}
+
+/* 📌 Unidades, funciones y palabras clave */
+.caja2 {
+  /* ✅ Unidad fr */
+
+  /* ✅ Función repeat() */
+
+  /* ✅ Función minmax() */
+
+  /* ✅ Palabras clave min-content, max-content, auto */ 
+}
+
+/* 📌 Grid responsivo */
+.caja3, .caja4 {
+  gap: .5rem;
+}
+
+.caja3 .elemento, .caja4 .elemento {
+  border-color: lightgray;
+  border-radius: 5px;
+  font-size: 40px;
+}
+
+/* ✅ auto-fit */
+/* Ajusta el número de columnas para que quepan en el contenedor */
+.caja3 {
+
+}
+
+/* ✅ auto-fill */
+/* Crea tantas columnas como quepan en el contenedor */
+.caja4 {
+
+}
+
+/* 📌 Alineación */
+.caja5 {
+  min-height: 400px;
+  gap: .5rem;
+
+  /* ✅ justify-items */
+  /* valores
+    start (default)
+    end
+    center
+    stretch
+  */
+
+  /* ✅ align-items */
+  /* valores
+    start
+    end
+    center
+    stretch (default)
+  */
+
+  /* ✅ place-items */
+  /* valores
+    <align-items> <justify-items>
+  */
+
+  /* ✅ justify-content */
+  /* valores
+    start (default)
+    end
+    center
+    stretch
+    space-around
+    space-between
+    space-evenly
+  */
+
+  /* ✅ align-content */
+  /* valores
+    start
+    end
+    center
+    stretch (default)
+    space-around
+    space-between
+    space-evenly
+  */
+
+  /* ✅ place-content */
+  /* valores
+    <align-content> <justify-content>
+  */
+}
+
+/* 💧 Propiedades para los elementos */
+.caja5 .elemento:nth-child(1) {
+  background-color: lightgreen;
+  /* ✅ justify-self */
+
+  /* ✅ align-self */
+
+  /* ✅ place-self */
+}
+
+/* 📌 Grid explícito */
+.caja6 {
+
+}
+
+/* Elementos */
+.caja6 .elemento:nth-child(1) {
+  background-color: lightgreen;
+  /* ✅ grit-[column|row]-[start|end] */
+
+  /* ✅ grid-[column|row] */
+
+  /* ✅ line or span */
+}
+
+/* 📌 Grid implícito */
+.caja7 {
+
+}
+
+.caja7 .elemento {
+  padding: 0;
+  border: none;
+}
+
+.caja7 .elemento img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.caja7 .wide {
+	grid-column: span 2;
+}
+
+.caja7 .tall {
+  grid-row: span 2;
+}
+
+.caja7 .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Areas */
+/* ✅ grid-template-area */
+
+

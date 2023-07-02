@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Grid <span>CSS</span></h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>✅ Propiedades del Contenedor</h2>
+
+      <h3>📌 Filas y columnas</h3>
+      <h4>grid-[template, auto]-[rows|columns], grid-auto-flow</h4>
+      <div class="contenedor caja1">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+      </div>
+
+      <h3>Unidades, funciones y palabras clave</h3>
+      <h4>fr, repeat, minmax, keywords</h4>
+      <div class="contenedor caja2">
+        <div class="elemento">corto</div>
+        <div class="elemento">texto medio</div>
+        <div class="elemento">texto extremadamente largo</div>
+      </div>
+
+      <h3>📌 Grid responsive</h3>
+      <h4>auto-fill</h4>
+      <div class="contenedor caja3">
+        <div class="elemento">🐻</div>
+        <div class="elemento">🐼</div>
+        <div class="elemento">🐻‍❄️</div>
+      </div>
+
+      <h4>auto-fit</h4>
+      <div class="contenedor caja4">
+        <div class="elemento">💧</div>
+        <div class="elemento">⚡</div>
+        <div class="elemento">🔥</div>
+      </div>
+
+      <h3>📌 Alineación</h3>
+      <h4>justify-[items|content], align-[items|content], place-[items|content], [justify|align|place]-self</h4>
+      <div class="contenedor caja5">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+        <div class="elemento">7</div>
+        <div class="elemento">8</div>
+        <div class="elemento">9</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>✅ Propiedades de los Elementos</h2>
+      <h3>📌 Grid Explicito</h3>
+      <h4>grid-[row|column]-[start|end], grid-[row|column]</h4>
+      <div class="contenedor caja6">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+        <div class="elemento">7</div>
+        <div class="elemento">8</div>
+        <div class="elemento">9</div>
+        <div class="elemento">10</div>
+      </div>
+
+      <h3>📌 Grid Implicito</h3>
+      <div id="box" class="contenedor caja7">
+        <div class="elemento">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&1" alt="img">
+        </div>
+        <div class="elemento">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&2" alt="img">
+        </div>
+        <div class="elemento tall">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&3" alt="img">
+        </div>
+        <div class="elemento">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&4" alt="img">
+        </div>
+        <div class="elemento wide">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&5" alt="img">
+        </div>
+        <div class="elemento tall">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&6" alt="img">
+        </div>
+        <div class="elemento big">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&7" alt="img">
+        </div>
+        <div class="elemento">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&8" alt="img">
+        </div>
+        <div class="elemento wide">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&9" alt="img">
+        </div>
+        <div class="elemento wide">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&10" alt="img">
+        </div>
+      </div>
+      <button id="btn" type="button">Agregar</button>
+    </section>
+
+    <script>
+      const types = ['tall', 'wide', 'big', ''];
+
+      function getRandomType() {
+        return types[Math.floor(Math.random() * types.length)];
+      }
+
+      btn.onclick = function () {
+        box.innerHTML += `<div class="elemento ${getRandomType()}">
+          <img src="https://source.unsplash.com/random/900×700/?fruit&${box.children.length + 1}" alt="img"></div>`;
+          
+      }
+    </script>
+  </main>
+
+  <footer>
+    <p>Academlo &copy; 2023</p>
+  </footer>
+</body>
+</html>

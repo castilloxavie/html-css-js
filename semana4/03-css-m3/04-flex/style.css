@@ -1,0 +1,174 @@
+/* CSS Document */
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header span {
+  background-color: skyblue;
+  padding: 0 5px;
+  border-radius: 5% 20% 5% 20%;
+}
+
+main {
+  padding: 10px 20px;
+}
+
+footer {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* 📌 Flexbox */
+.contenedor {
+  display: flex;
+  border: 4px solid lightcoral;
+  padding: 20px;
+  min-height: 200px;
+}
+
+body section + section .contenedor{
+  border-color: lightgreen;
+}
+
+.elemento {
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.font-50 {
+  font-size: 50px;
+}
+
+/* Propiedades para el contenedor */
+/* ✅ flex-direction */
+/* Valores
+  - row *por defecto
+  - row-reverse
+  - column
+  - column-reverse
+*/
+.flex-direction {
+  flex-direction: row;
+}
+
+/* ✅ flex-wrap */
+/* Valores
+  - nowrap *por defecto
+  - wrap
+  - wrap-reverse
+*/
+.flex-wrap {
+  width: 50%;
+  flex-wrap: nowrap;
+}
+
+/* ✅ flex-flow */
+/* Valores
+  - <flex-direction> <flex-wrap>
+*/
+
+/* ✅ justify-content */
+/* Valores
+  - flex-start *por defecto
+  - flex-end
+  - center
+  - space-between
+  - space-around
+  - space-evenly
+*/
+.justify-content {
+  justify-content: flex-start;
+}
+
+/* ✅ align-items */
+/* Valores
+  - stretch *por defecto
+  - flex-start
+  - flex-end
+  - center
+  - baseline
+*/
+.align-items {
+  align-items: stretch;
+}
+
+/* ✅ align-content */
+/* Valores
+  - stretch
+  - flex-start *por defecto
+  - flex-end
+  - center
+  - space-between
+  - space-around
+*/
+.align-content {
+  align-content: flex-start;
+}
+
+/* Propiedades para los elementos */
+/* ✅ order */
+/* Valores
+  - <integer>
+*/
+.order .elemento:nth-child(1) {
+  background-color: lightskyblue;
+}
+
+/* ✅ flex-grow */
+/* Valores
+  - <number> *por defecto 0
+  factor de crecimiento
+*/
+
+/* ✅ flex-shrink */
+/* Valores
+  - <number> *por defecto 1
+  factor de decrecimiento
+*/
+
+/* ✅ flex-basis */
+/* Valores
+  - <length> *por defecto auto
+  tamaño base
+*/
+
+/* ✅ flex */
+/* Valores
+  - none *por defecto
+  - [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+*/
+
+/* ✅ align-self */
+/* Valores
+  - auto *por defecto
+  - stretch
+  - flex-start
+  - flex-end
+  - center
+  - baseline
+*/
