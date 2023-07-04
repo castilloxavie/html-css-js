@@ -73,7 +73,10 @@ body section + section .contenedor{
   - column-reverse
 */
 .flex-direction {
-  flex-direction: row;
+  flex-direction: row; /*se trabaja en el eje de las x*/
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 /* ✅ flex-wrap */
@@ -85,6 +88,8 @@ body section + section .contenedor{
 .flex-wrap {
   width: 50%;
   flex-wrap: nowrap;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 /* ✅ flex-flow */
@@ -103,6 +108,12 @@ body section + section .contenedor{
 */
 .justify-content {
   justify-content: flex-start;
+  justify-content: center;
+  justify-content: end;
+
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* ✅ align-items */
@@ -114,7 +125,12 @@ body section + section .contenedor{
   - baseline
 */
 .align-items {
+  flex-direction: row;
   align-items: stretch;
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: baseline;
 }
 
 /* ✅ align-content */
@@ -127,7 +143,12 @@ body section + section .contenedor{
   - space-around
 */
 .align-content {
+  flex-wrap: wrap;
   align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
 }
 
 /* Propiedades para los elementos */
@@ -135,7 +156,23 @@ body section + section .contenedor{
 /* Valores
   - <integer>
 */
-.order .elemento:nth-child(1) {
+.order .elemento:nth-child(3) {
+  order: 1;
+}
+
+.order .elemento:nth-child(3) {
+  order: 2;
+}
+
+.order .elemento:nth-child(3) {
+  order: 2;
+}
+
+.order .elemento:nth-child(3) {
+  order: 2;
+}
+
+.order .elemento:nth-child(3) {
   background-color: lightskyblue;
 }
 
@@ -172,3 +209,13 @@ body section + section .contenedor{
   - center
   - baseline
 */
+
+.practica {
+  height: 400px;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  gap: 13px 13px;
+}
